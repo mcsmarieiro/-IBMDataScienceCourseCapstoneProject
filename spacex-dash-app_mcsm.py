@@ -81,7 +81,7 @@ def get_scatter_chart(entered_site, payload_range):
     if entered_site == 'ALL':
         fig = px.scatter(filtered_df, x='Payload Mass (kg)', y='class', 
                              color='Booster Version Category',
-                             title='Correlation between Payload and Successi for all sites')
+                             title='Correlation between Payload and Success for all sites')
         return fig
     else:
         # return the outcomes piechart for a selected site
